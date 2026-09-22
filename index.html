@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Qasim Glass Aluminium | Interior & Exterior Design</title>
+<meta name="description" content="Qasim Glass Aluminium - Aluminium windows, PVC walls, PVC panels, PVC sheets, kitchen and bathroom interior design services in Lahore.">
+<style>
+:root{
+  --dark:#0b1220;--dark2:#111c31;--gold:#d7a84b;--gold2:#f4d58b;
+  --white:#fff;--muted:#aeb8c9;--light:#f6f8fb;--line:#e6eaf0;
+  --green:#20c875;--shadow:0 20px 55px rgba(8,18,36,.12);--radius:22px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Arial,Helvetica,sans-serif;color:#182235;background:#fff;line-height:1.6}
+a{text-decoration:none;color:inherit}
+img{max-width:100%;display:block}
+.container{width:min(1180px,92%);margin:auto}
+.topbar{background:#070d18;color:#dce4f0;font-size:13px;padding:9px 0}
+.topbar .container{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}
+.nav{position:sticky;top:0;z-index:1000;background:rgba(11,18,32,.96);backdrop-filter:blur(12px);border-bottom:1px solid rgba(255,255,255,.08)}
+.nav-inner{height:76px;display:flex;align-items:center;justify-content:space-between}
+.logo{font-weight:900;color:#fff;font-size:21px;letter-spacing:.4px}
+.logo span{color:var(--gold)}
+.menu{display:flex;gap:25px;align-items:center}
+.menu a{color:#e9eef6;font-size:14px;font-weight:700;transition:.25s}
+.menu a:hover{color:var(--gold)}
+.menu-btn{display:none;color:#fff;font-size:28px;cursor:pointer}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;border:0;border-radius:999px;padding:13px 21px;font-weight:800;cursor:pointer;transition:.25s}
+.btn-gold{background:linear-gradient(135deg,var(--gold),var(--gold2));color:#111}
+.btn-gold:hover{transform:translateY(-3px);box-shadow:0 12px 25px rgba(215,168,75,.28)}
+.btn-outline{border:1px solid rgba(255,255,255,.28);color:#fff;background:transparent}
+.btn-green{background:var(--green);color:#fff}
+.hero{min-height:650px;background:linear-gradient(90deg,rgba(5,11,21,.92),rgba(5,11,21,.63)),url('https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1800&q=85') center/cover;display:flex;align-items:center;color:#fff}
+.hero-content{max-width:720px;padding:80px 0}
+.badge{display:inline-block;color:var(--gold2);border:1px solid rgba(244,213,139,.4);padding:7px 13px;border-radius:99px;font-size:12px;font-weight:800;text-transform:uppercase;letter-spacing:1px;margin-bottom:18px}
+.hero h1{font-size:clamp(40px,6vw,72px);line-height:1.04;margin-bottom:22px}
+.hero h1 span{color:var(--gold2)}
+.hero p{font-size:18px;color:#dce3ee;max-width:650px;margin-bottom:28px}
+.actions{display:flex;gap:12px;flex-wrap:wrap}
+.stats{margin-top:42px;display:flex;gap:35px;flex-wrap:wrap}
+.stat strong{font-size:28px;color:var(--gold2);display:block}
+.stat small{color:#cbd4e1}
+section{padding:90px 0}
+.section-head{text-align:center;max-width:720px;margin:0 auto 45px}
+.kicker{color:#a27b2e;font-size:12px;font-weight:900;letter-spacing:2px;text-transform:uppercase}
+.section-head h2{font-size:clamp(30px,4vw,46px);line-height:1.1;margin:8px 0 14px;color:#101a2d}
+.section-head p{color:#687487}
+.services{background:var(--light)}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow);transition:.3s}
+.card:hover{transform:translateY(-8px)}
+.card-img{height:210px;overflow:hidden}
+.card-img img{width:100%;height:100%;object-fit:cover;transition:.5s}
+.card:hover img{transform:scale(1.06)}
+.card-body{padding:24px}
+.card h3{font-size:22px;margin-bottom:8px}
+.card p{color:#6b7687;font-size:14px;margin-bottom:18px}
+.price-row{display:flex;align-items:center;justify-content:space-between;border-top:1px solid var(--line);padding-top:15px}
+.price{font-size:19px;font-weight:900;color:#9b7426}
+.quantity{width:80px;padding:9px;border:1px solid #dce2ea;border-radius:10px}
+.card-link{display:inline-block;color:#9b7426;font-weight:800;font-size:13px;margin-top:15px}
+.quote{background:linear-gradient(135deg,#0b1220,#172844);color:#fff}
+.quote-box{display:grid;grid-template-columns:1fr 1.15fr;gap:45px;align-items:center}
+.quote h2{font-size:clamp(30px,4vw,50px);line-height:1.1;margin:10px 0 18px}
+.quote p{color:#c2ccda}
+.features{display:grid;gap:13px;margin-top:24px}
+.feature{display:flex;gap:12px;align-items:center;color:#e5ebf4}
+.tick{width:30px;height:30px;border-radius:50%;background:rgba(215,168,75,.15);color:var(--gold2);display:grid;place-items:center}
+.form{background:#fff;padding:28px;border-radius:24px;color:#172033;box-shadow:0 25px 70px rgba(0,0,0,.25)}
+.form h3{font-size:24px;margin-bottom:18px}
+.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:13px}
+input,select,textarea{width:100%;padding:13px 14px;border:1px solid #dce2ea;border-radius:12px;font:inherit;outline:none;background:#fff}
+input:focus,select:focus,textarea:focus{border-color:#c49b45;box-shadow:0 0 0 3px rgba(196,155,69,.12)}
+textarea{min-height:110px;resize:vertical}
+.full{grid-column:1/-1}
+.form .btn{width:100%;margin-top:5px}
+.about{background:#fff}
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:55px;align-items:center}
+.about-img{border-radius:28px;overflow:hidden;box-shadow:var(--shadow);position:relative}
+.about-img img{height:520px;width:100%;object-fit:cover}
+.about-badge{position:absolute;bottom:20px;left:20px;background:#fff;border-radius:16px;padding:15px 18px;box-shadow:var(--shadow);font-weight:900}
+.about h2{font-size:clamp(32px,4vw,48px);line-height:1.1;margin:10px 0 20px}
+.about p{color:#687487;margin-bottom:15px}
+.process{background:var(--light)}
+.process-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.process-card{background:#fff;padding:25px;border-radius:20px;border:1px solid var(--line)}
+.num{font-size:32px;font-weight:900;color:#c89b42}
+.process-card h3{margin:8px 0}
+.process-card p{color:#718094;font-size:14px}
+.gallery-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:15px}
+.gallery-grid img{height:220px;width:100%;object-fit:cover;border-radius:17px;transition:.3s}
+.gallery-grid img:hover{transform:scale(1.03)}
+.contact{background:var(--light)}
+.contact-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:25px}
+.info{background:#0b1220;color:#fff;border-radius:24px;padding:32px}
+.info h3{font-size:28px;margin-bottom:10px}
+.info p{color:#bdc8d8}
+.info-item{padding:17px 0;border-bottom:1px solid rgba(255,255,255,.1)}
+.info-item strong{display:block;color:var(--gold2);font-size:13px;text-transform:uppercase;letter-spacing:1px}
+.info-item a{color:#fff}
+.hours{margin-top:18px}
+.hours div{display:flex;justify-content:space-between;padding:7px 0;color:#cbd4e0}
+.footer{background:#070d18;color:#bac5d5;padding:55px 0 20px}
+.footer-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:35px}
+.footer h4{color:#fff;margin-bottom:14px}
+.footer a{display:block;margin:8px 0;font-size:14px}
+.footer a:hover{color:var(--gold2)}
+.footer-bottom{border-top:1px solid rgba(255,255,255,.1);margin-top:35px;padding-top:18px;text-align:center;font-size:13px}
+.float-wa{position:fixed;right:20px;bottom:20px;width:58px;height:58px;border-radius:50%;display:grid;place-items:center;background:#20c875;color:#fff;font-size:28px;box-shadow:0 12px 35px rgba(32,200,117,.35);z-index:999}
+.notice{font-size:12px;color:#7b8696;margin-top:10px}
+@media(max-width:900px){
+ .menu{display:none;position:absolute;top:76px;left:0;right:0;background:#0b1220;padding:18px 5%;flex-direction:column;align-items:flex-start}
+ .menu.open{display:flex}.menu-btn{display:block}.grid{grid-template-columns:1fr 1fr}
+ .quote-box,.about-grid,.contact-grid{grid-template-columns:1fr}.process-grid{grid-template-columns:1fr 1fr}.gallery-grid{grid-template-columns:1fr 1fr}.footer-grid{grid-template-columns:1fr 1fr}
+}
+@media(max-width:600px){
+ .hero{min-height:620px}.hero-content{padding:60px 0}.hero p{font-size:16px}
+ .grid,.process-grid,.gallery-grid,.footer-grid,.form-grid{grid-template-columns:1fr}
+ .full{grid-column:auto}.topbar .container{justify-content:center;text-align:center}
+ section{padding:65px 0}.about-img img{height:380px}
+}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+ <div class="container">
+  <span>📍 Ghazi Road, Lahore — Near DHA Naka Station, Phase 3</span>
+  <span>📞 +92 307 6689305</span>
+ </div>
+</div>
+
+<nav class="nav">
+ <div class="container nav-inner">
+  <a class="logo" href="#home">QASIM <span>GLASS</span> ALUMINIUM</a>
+  <div class="menu" id="menu">
+   <a href="#home">Home</a><a href="#services">Services</a><a href="#about">About</a>
+   <a href="#gallery">Projects</a><a href="#query">Quotation</a><a href="#contact">Contact</a>
+   <a class="btn btn-gold" href="https://wa.me/923076689305?text=Hello%20Qasim%20Glass%20Aluminium%2C%20I%20need%20a%20quotation." target="_blank">WhatsApp</a>
+  </div>
+  <div class="menu-btn" onclick="document.getElementById('menu').classList.toggle('open')">☰</div>
+ </div>
+</nav>
+
+<header class="hero" id="home">
+ <div class="container hero-content">
+  <span class="badge">Interior • Exterior • Aluminium • PVC</span>
+  <h1>Modern Spaces.<br><span>Beautifully Designed.</span></h1>
+  <p>Professional home interior and exterior solutions including aluminium windows, PVC walls, PVC panels, PVC sheets, kitchen and bathroom interior work in Lahore.</p>
+  <div class="actions">
+   <a class="btn btn-gold" href="#query">Get Free Quote →</a>
+   <a class="btn btn-outline" href="#services">Explore Services</a>
+  </div>
+  <div class="stats">
+   <div class="stat"><strong>05+</strong><small>Core Services</small></div>
+   <div class="stat"><strong>100%</strong><small>Custom Design</small></div>
+   <div class="stat"><strong>01</strong><small>Easy Quotation</small></div>
+  </div>
+ </div>
+</header>
+
+<section class="services" id="services">
+ <div class="container">
+  <div class="section-head">
+   <span class="kicker">Our Services</span>
+   <h2>Complete Interior & Exterior Solutions</h2>
+   <p>Select a service, enter quantity and request a quotation. Final price can be confirmed after measurement and material selection.</p>
+  </div>
+  <div class="grid">
+   <article class="card">
+    <div class="card-img"><img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=900&q=80" alt="Aluminium windows"></div>
+    <div class="card-body"><h3>Aluminium Windows & Doors</h3><p>Modern aluminium window and door solutions with clean finishing and custom measurements.</p>
+    <div class="price-row"><span class="price">Get Quote</span><input class="quantity" type="number" min="1" value="1" aria-label="Quantity"></div>
+    <a class="card-link" href="#query" onclick="setService('Aluminium Windows & Doors')">Request Price →</a></div>
+   </article>
+   <article class="card">
+    <div class="card-img"><img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=900&q=80" alt="PVC wall interior"></div>
+    <div class="card-body"><h3>PVC Wall</h3><p>Stylish PVC wall solutions for bedrooms, lounges, offices and commercial spaces.</p>
+    <div class="price-row"><span class="price">Get Quote</span><input class="quantity" type="number" min="1" value="1" aria-label="Quantity"></div>
+    <a class="card-link" href="#query" onclick="setService('PVC Wall')">Request Price →</a></div>
+   </article>
+   <article class="card">
+    <div class="card-img"><img src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=900&q=80" alt="PVC panel"></div>
+    <div class="card-body"><h3>PVC Panels</h3><p>Decorative PVC panels that add texture and a premium modern appearance.</p>
+    <div class="price-row"><span class="price">Get Quote</span><input class="quantity" type="number" min="1" value="1" aria-label="Quantity"></div>
+    <a class="card-link" href="#query" onclick="setService('PVC Panels')">Request Price →</a></div>
+   </article>
+   <article class="card">
+    <div class="card-img"><img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=900&q=80" alt="PVC sheets"></div>
+    <div class="card-body"><h3>PVC Sheets</h3><p>Durable and practical PVC sheet applications for walls and selected interior surfaces.</p>
+    <div class="price-row"><span class="price">Get Quote</span><input class="quantity" type="number" min="1" value="1" aria-label="Quantity"></div>
+    <a class="card-link" href="#query" onclick="setService('PVC Sheets')">Request Price →</a></div>
+   </article>
+   <article class="card">
+    <div class="card-img"><img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=900&q=80" alt="Kitchen interior"></div>
+    <div class="card-body"><h3>Kitchen Interior</h3><p>Functional kitchen interior concepts with modern finishes and customized design.</p>
+    <div class="price-row"><span class="price">Get Quote</span><input class="quantity" type="number" min="1" value="1" aria-label="Quantity"></div>
+    <a class="card-link" href="#query" onclick="setService('Kitchen Interior')">Request Price →</a></div>
+   </article>
+   <article class="card">
+    <div class="card-img"><img src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=900&q=80" alt="Bathroom interior"></div>
+    <div class="card-body"><h3>Bathroom Interior</h3><p>Modern bathroom interior finishing designed around your space, style and requirements.</p>
+    <div class="price-row"><span class="price">Get Quote</span><input class="quantity" type="number" min="1" value="1" aria-label="Quantity"></div>
+    <a class="card-link" href="#query" onclick="setService('Bathroom Interior')">Request Price →</a></div>
+   </article>
+  </div>
+ </div>
+</section>
+
+<section class="quote" id="query">
+ <div class="container quote-box">
+  <div>
+   <span class="kicker">Quick Quotation</span>
+   <h2>Tell us what you want to build.</h2>
+   <p>Submit your project details. The form prepares a WhatsApp quotation request with your selected service, quantity and requirements.</p>
+   <div class="features">
+    <div class="feature"><span class="tick">✓</span> Custom measurements & design</div>
+    <div class="feature"><span class="tick">✓</span> Material & finishing discussion</div>
+    <div class="feature"><span class="tick">✓</span> Easy WhatsApp communication</div>
+   </div>
+  </div>
+  <form class="form" onsubmit="sendQuote(event)">
+   <h3>Request a Quote</h3>
+   <div class="form-grid">
+    <input id="name" required placeholder="Your Name">
+    <input id="phone" required placeholder="Phone / WhatsApp">
+    <select id="service" required>
+     <option value="">Select Service</option>
+     <option>Aluminium Windows & Doors</option><option>PVC Wall</option><option>PVC Panels</option>
+     <option>PVC Sheets</option><option>Kitchen Interior</option><option>Bathroom Interior</option>
+    </select>
+    <input id="qty" type="number" min="1" value="1" placeholder="Quantity">
+    <input id="area" class="full" placeholder="Area / Size (e.g. 10 x 12 ft)">
+    <textarea id="details" class="full" placeholder="Tell us about your design, material, colour or project requirements"></textarea>
+    <button class="btn btn-gold full" type="submit">Submit & Send on WhatsApp →</button>
+   </div>
+   <p class="notice">Final price is confirmed after project measurements, material and design selection.</p>
+  </form>
+ </div>
+</section>
+
+<section class="about" id="about">
+ <div class="container about-grid">
+  <div class="about-img">
+   <img src="https://images.unsplash.com/photo-1600607688969-a5bfcd646154?auto=format&fit=crop&w=1100&q=85" alt="Modern interior design">
+   <div class="about-badge">Qasim Glass Aluminium</div>
+  </div>
+  <div>
+   <span class="kicker">About Us</span>
+   <h2>Premium finishing for modern homes.</h2>
+   <p>Qasim Glass Aluminium provides interior and exterior design solutions for residential and commercial spaces in Lahore.</p>
+   <p>Our service range includes aluminium windows, PVC walls, PVC panels, PVC sheets, kitchen interiors and bathroom interiors.</p>
+   <div class="actions"><a class="btn btn-gold" href="#contact">Contact Us</a><a class="btn" style="background:#eef2f7" href="#gallery">View Projects</a></div>
+  </div>
+ </div>
+</section>
+
+<section class="process">
+ <div class="container">
+  <div class="section-head"><span class="kicker">How It Works</span><h2>Simple 4-Step Process</h2></div>
+  <div class="process-grid">
+   <div class="process-card"><div class="num">01</div><h3>Send Inquiry</h3><p>Choose your service and share your project details.</p></div>
+   <div class="process-card"><div class="num">02</div><h3>Discuss Design</h3><p>Discuss material, colour, measurements and finishing.</p></div>
+   <div class="process-card"><div class="num">03</div><h3>Quotation</h3><p>Receive project pricing based on requirements.</p></div>
+   <div class="process-card"><div class="num">04</div><h3>Work Begins</h3><p>Finalize the project and proceed with installation.</p></div>
+  </div>
+ </div>
+</section>
+
+<section id="gallery">
+ <div class="container">
+  <div class="section-head"><span class="kicker">Design Inspiration</span><h2>Interior & Exterior Ideas</h2><p>Reference visuals are included here for the website prototype. Replace them with your own completed-project photos before publishing.</p></div>
+  <div class="gallery-grid">
+   <img src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=700&q=80" alt="Interior reference">
+   <img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=700&q=80" alt="Interior reference">
+   <img src="https://images.unsplash.com/photo-1600607688969-a5bfcd646154?auto=format&fit=crop&w=700&q=80" alt="Interior reference">
+   <img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=700&q=80" alt="Wall design reference">
+  </div>
+ </div>
+</section>
+
+<section class="contact" id="contact">
+ <div class="container">
+  <div class="section-head"><span class="kicker">Contact</span><h2>Let's discuss your project</h2><p>Send an inquiry or contact us directly through WhatsApp.</p></div>
+  <div class="contact-grid">
+   <div class="info">
+    <h3>Qasim Glass Aluminium</h3>
+    <p>Interior & Exterior Design Solutions</p>
+    <div class="info-item"><strong>WhatsApp / Phone</strong><a href="https://wa.me/923076689305" target="_blank">+92 307 6689305</a></div>
+    <div class="info-item"><strong>Website / Domain</strong><span>qasimglassinterior.com</span></div>
+    <div class="info-item"><strong>Address</strong><span>Ghazi Road Lahore, Near DHA Naka Station, Phase 3</span></div>
+    <div class="hours"><strong style="color:#d7a84b">Service Hours</strong>
+     <div><span>Mon – Sat</span><span>9:00 AM – 8:00 PM</span></div>
+     <div><span>Sunday</span><span>By Appointment</span></div>
+    </div>
+   </div>
+   <div class="form">
+    <h3>Send an Inquiry</h3>
+    <form onsubmit="sendContact(event)">
+     <div class="form-grid">
+      <input id="cname" required placeholder="Full Name">
+      <input id="cphone" required placeholder="Phone / WhatsApp">
+      <input id="csubject" class="full" placeholder="Subject">
+      <textarea id="cmessage" class="full" required placeholder="Your message"></textarea>
+      <button class="btn btn-gold full" type="submit">Send Inquiry on WhatsApp →</button>
+     </div>
+    </form>
+   </div>
+  </div>
+ </div>
+</section>
+
+<footer class="footer">
+ <div class="container footer-grid">
+  <div><div class="logo">QASIM <span>GLASS</span> ALUMINIUM</div><p style="margin-top:14px;font-size:14px">Modern interior and exterior design solutions for homes and businesses in Lahore.</p></div>
+  <div><h4>Quick Links</h4><a href="#home">Home</a><a href="#services">Services</a><a href="#about">About</a><a href="#gallery">Projects</a></div>
+  <div><h4>Services</h4><a href="#services">Aluminium Windows</a><a href="#services">PVC Wall & Panels</a><a href="#services">PVC Sheets</a><a href="#services">Kitchen & Bathroom</a></div>
+  <div><h4>Contact</h4><a href="https://wa.me/923076689305" target="_blank">WhatsApp</a><a href="#contact">Ghazi Road, Lahore</a><a href="#query">Get Quotation</a></div>
+ </div>
+ <div class="container footer-bottom">© 2026 Qasim Glass Aluminium. All Rights Reserved.</div>
+</footer>
+
+<a class="float-wa" href="https://wa.me/923076689305?text=Hello%20Qasim%20Glass%20Aluminium%2C%20I%20need%20information%20about%20your%20services." target="_blank" aria-label="WhatsApp">◉</a>
+
+<script>
+function setService(service){
+ document.getElementById('service').value=service;
+ document.getElementById('query').scrollIntoView({behavior:'smooth'});
+}
+function sendQuote(e){
+ e.preventDefault();
+ const name=document.getElementById('name').value;
+ const phone=document.getElementById('phone').value;
+ const service=document.getElementById('service').value;
+ const qty=document.getElementById('qty').value;
+ const area=document.getElementById('area').value;
+ const details=document.getElementById('details').value;
+ const msg=`Hello Qasim Glass Aluminium,%0A%0AQuotation Request:%0AName: ${encodeURIComponent(name)}%0APhone: ${encodeURIComponent(phone)}%0AService: ${encodeURIComponent(service)}%0AQuantity: ${encodeURIComponent(qty)}%0AArea/Size: ${encodeURIComponent(area)}%0ADetails: ${encodeURIComponent(details)}`;
+ window.open(`https://wa.me/923076689305?text=${msg}`,'_blank');
+}
+function sendContact(e){
+ e.preventDefault();
+ const name=document.getElementById('cname').value;
+ const phone=document.getElementById('cphone').value;
+ const subject=document.getElementById('csubject').value;
+ const message=document.getElementById('cmessage').value;
+ const msg=`Hello Qasim Glass Aluminium,%0A%0AName: ${encodeURIComponent(name)}%0APhone: ${encodeURIComponent(phone)}%0ASubject: ${encodeURIComponent(subject)}%0AMessage: ${encodeURIComponent(message)}`;
+ window.open(`https://wa.me/923076689305?text=${msg}`,'_blank');
+}
+</script>
+</body>
+</html>
